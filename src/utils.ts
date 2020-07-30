@@ -18,3 +18,11 @@ export function combineModuleAndRootManifest<TUserManifest extends TBaseModuleMa
     name: `${rootManifest.name}.${module.name}`
   };
 }
+
+export class LoadSourceFnError extends Error {
+  constructor(message: string, public status: number) {
+    super(message);
+    // https://stackoverflow.com/a/41102306/11662278
+    Object.setPrototypeOf(this, new.target.prototype);
+  }
+}

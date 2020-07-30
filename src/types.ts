@@ -1,3 +1,5 @@
+import { LoadSourceFnError } from './utils';
+
 /**
  * Стратегии загрузки модулей
  */
@@ -231,7 +233,7 @@ export type TMltConfig<TUserManifest extends TBaseModuleManifest> = {
 
 export type TMLTProcessError = {
   type: ErrorTypes;
-  error: Error;
+  error: Error | LoadSourceFnError;
 };
 
 export type TSourceLoadingResult<T> = {
