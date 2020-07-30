@@ -98,7 +98,7 @@
     "rollup-plugin-uglify": "6.0.0",
     "rxjs": "6.4.0",
     "shx": "0.3.2",
-    "standard-version": "4.4.0",
+    "standard-version": "8.0.1",
     "ts-jest": "23.10.5",
     "tslib": "1.10.0",
     "tslint": "5.12.0",
